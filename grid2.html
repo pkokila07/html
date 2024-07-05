@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .jeni{
+            display: grid;
+            grid-template-columns: minmax(170,1fr) 1fr 1fr; 
+        }
+        .priya{
+          display: grid;
+          grid-template-columns:repeat(4,1fr) ; 
+          /* gap:20px;  */
+          grid-template-rows: 100px 100px 100px 100px 100px 100px;
+          grid-auto-rows: 200px;
+        }
+        .box{
+            color: black;
+            background-color: aquamarine;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .box1{
+            grid-column: span 4;
+            background-color: blue;
+        }
+        .box2{
+            grid-row: span 3;
+            background-color: orangered;
+        }
+        .box3{
+            grid-column: span 2;
+            background-color: green;
+            grid-row: span 3;
+            background-color: green;
+        }
+        .box4{
+            grid-row: span 3;
+            background-color: darkgoldenrod;
+        }
+        .box5{
+            grid-column: span 4;
+            background-color: blueviolet;
+        } 
+    </style>
+</head>
+<body>
+    <div class="jeni">
+        <div class="priya">
+            <div class="box box1">header</div>
+            <div class="box box2">left sidebar</div>
+            <div class="box box3">main content</div>
+            <div class="box box4">right sidebar</div>
+            <div class="box box5">footer</div>
+            </div>
+    </div>
+</body>
+</html>

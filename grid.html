@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+         .para{
+            background-color: blanchedalmond;
+         }
+         .box{
+            color: brown;
+            background-color: burlywood;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+         }
+        .yoon{
+           display: grid;
+           /* display: flex; */
+           grid-template-columns: repeat(1 1fr);
+           grid-template-columns: minmax(200px,1fr)1fr 1fr;
+           /* column-gap: 12px;
+            row-gap: 10px; */
+         gap:10px;  
+        }
+        /* .para{
+            background-color: bisque;
+        } */
+         .outer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:15px;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-auto-rows: 200px;
+         }
+         .box1{
+            grid-column: span 3;
+         }
+         .box2{
+            grid-row: span 2;
+         }
+    </style>
+</head>
+<body>
+    <div class="yoon">
+       <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+
+       </div>
+        <!-- <div class="para">
+          <p>The Mind IT Solution is one of the few IT system integration, professional service and software development companies in Macedonia that works with Enterprise systems and companies. As a privately owned company, The Mind IT Solution provides IT Consultancy, software design and development as well as professional services and hardware deployment and maintenance to the following verticals:</p>  
+        </div>
+        <div class="para">
+            <p>The Mind IT Solution is located in Skopje, Macedonia (South-Eastern Europe), offering fully fledged services for software development and engineering empowering effective near-shore management to its clients. Recognized both on local and regional markets since 1995, initially known as ICL and later acquiring regional Fujitsu Services partner, Infinite continues to operate with higher client expectancy and flexible solution offers.</p>
+        </div>
+        <div class="para">
+            <p>Additionally, The Mind IT Solution is experienced in delivery, installation and support of large computer systems and networks and maintains a local Spare Part Consignment Store, providing back- up for customer systems in order to minimize the effects of possible faults. Service support is provided by The Mind IT Solution service facility based in Skopje, Macedonia. Its qualified staff is performing</p>
+        </div>
+        <div class="para">
+            <p>Our team operates with enthusiasm and flexibility. We are focused on our customers, being their reliable partner for IT services and solutions, working together on a partnership basis, helping them face the challenges of the modern times. Beside in Macedonia, The Mind IT Solution has clients from USA, Great Britain, Netherlands, Denmark, France, Sweden, Switzerland, Spain, Germany, Italy, Croatia, Serbia, Island, Spain, Portugal, Bulgaria and Estonia.</p>
+        </div>
+        <div class="para">
+            <p>Tender coconut, also known as green coconut or young coconut, is the immature coconut fruit that is harvested when it is about 5-7 months old. It is characterized by its green outer shell, which is covered with a soft, fibrous husk, and its white, jelly-like flesh, which is enclosed in a thin, translucent shell. Tender coconut is unprocessed young coconut and it is Fresh, natural and healthy. It works as an energy drink in the hot summers as it is loaded with plenty of minerals, vitamins and nutrients along with glucose</p>
+        </div>
+        <div class="para">
+            <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages. Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain.</p>
+        </div>  -->
+    <!-- </div> -->
+</body>
+</html>

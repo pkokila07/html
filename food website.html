@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>
+ 
+    .Imgbg{
+      position: absolute;
+      z-index: -1;
+      filter: brightness(20%);
+    }
+    .algn{
+      text-align: justify;
+    }
+    .imgrotate{
+      animation: imgrotate 25s linear infinite;
+    }
+    @keyframes imgrotate {
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> PAGES </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">CONTACT</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+  <div class="Homebg container-fluid">
+      <img  class="Imgbg img-fluid" src="kaana6.jpg">
+      <div class="container">
+        <div class="row row-cols-lg-2 row-cols-1 pt-5 pb-5"> 
+          <div class="col text-white d-none d-lg-block algn  pt-lg-5 mt-lg-5 order-lg-1 order-2">
+            <div class="text-lg-start ps-3"><h1 class="fw-bolder">Enjoy your<br>delicious Food <img   src="https://cdn4.iconfinder.com/data/icons/hotel-facilities-2/512/dinner-512.png" style="width: 30px; height: 30px;"></h1></div>
+            <p class="p-3">Creation and editing is extremely simple: just click, drag or drop. The design will be rearranged automatically with a grid layout. Everything fits into the best place, and is simple to move, resize or rearrange.
+             Creation and editing is extremely simple: just click, drag or drop. The design will be rearranged automatically with a grid layout. Everything fits into the best place, and is simple to move, resize or rearrange.
+            </p>
+            <div class="text-center"><button class="btn btn-warning ps-5 pe-5">Book table</button></div>
+          </div>
+         <div class="col algn d-block d-lg-none  pt-lg-5 mt-lg-5 order-lg-1 order-2">
+           <div class="text-lg-start ps-3"><h1 class="fw-bolder">Enjoy your<br>delicious Food <img src="https://cdn4.iconfinder.com/data/icons/hotel-facilities-2/512/dinner-512.png" style="width: 30px; height: 30px;"></h1></div>
+           <p class="p-3">Creation and editing is extremely simple: just click, drag or drop. The design will be rearranged automatically with a grid layout. Everything fits into the best place, and is simple to move, resize or rearrange.
+            Creation and editing is extremely simple: just click, drag or drop. The design will be rearranged automatically with a grid layout. Everything fits into the best place, and is simple to move, resize or rearrange.
+           </p>
+           <div class="text-center"><button class="btn btn-warning ps-5 pe-5">Book table</button></div>
+         </div>
+         <div class="col d-block justify-content-lg-end justify-content-center order-lg-2 order-1">
+           <img class="imgrotate img-fluid" src="https://www.jlking.com.au/assets/images/Tandoori-Chicken-Salad-Top_2021-10-14-064311.png"  alt="">
+         </div>
+       </div>
+      </div>
+     </div>
+</body>
+
+</html>

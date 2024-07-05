@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+     crossorigin="anonymous"></script>
+     <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-top: 70px;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            font-family: 'Jost' , sans-serif;
+            /* background:linear-gradient(to bottom, #0f0c29,#302b63,#24243e); */
+            background-repeat: no-repeat;
+           
+        }
+        .main{
+            width:450px;
+            height:500px;
+            background-image: url('ani5.jpg');
+            /* background: red; */
+            overflow: hidden;
+            /* box-shadow: 5px 20px 50px #000; */
+            border-radius: 10%;
+           
+        }
+        #chk{
+            display: none;
+          }
+          .signup{
+            position: relative;
+            width: 400x;
+            height:400x;
+          }
+          label{
+            color:#fff;
+            font-size: 2.3em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-weight: bold;
+            cursor:pointer;
+            transition: 5% ease-in-out; 
+          }
+          input{
+            width: 60%;
+            height: 20px;
+            background: #e0dede;
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+            border:none ;
+            outline:none;
+            border-radius: 5px;
+          }
+          button{
+            width: 80px;
+            height:40px;
+            margin: 10px auto;
+            justify-content: center;
+            display: block;
+            color:#fff;
+            background: #573b8a;
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 20px;
+            outline: none;
+            border:none;
+            border-radius: 5px;
+            transition: .2s ease-in;
+            cursor: pointer;
+          }
+          button:hover{
+            background: #6d44b5;
+          }
+          .login{
+            height: 460px;
+            background: #eee;
+            border-radius: 60% / 10%;
+            transform: translateY(-10px);
+            transition: .8s ease-in-out;
+          }
+          .login label{
+            color:#573b8a;
+            
+          }
+          #chk:checked ~.login{
+            transform: translateY(-500px);
+          }
+          
+     </style>
+
+</head>
+<body>
+   <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="signup pt-3 pb-3">
+        <form>
+            <label for="chk" aria-hidden="true">sign up</label><br>
+            <input type="text" name="text" placeholder="user name" required=""><br>
+            <input type="email" name="email" placeholder="Email" required=""><br>
+            <input type="password" name="password" placeholder="password" required="">
+            <button>sign up</button>
+        </form>
+    </div>
+    <div class="login ">
+        <form>
+            <label for="chk" aria-hidden="true">login</label><br>
+            <input type="email" name="email" placeholder="Email" required=""><br>
+            <input type="password" name="password" placeholder="password" required=""><br>
+            <button>login</button>
+        </form>
+    </div>
+    </div>
+   </body>
+</html>
